@@ -12,7 +12,6 @@ import Results from '../image-results/Results';
         amount: 15,
         apiUrl: "https://pixabay.com/api",
         apiKey: "8879026-03b299e37ba38ae4d285fbdca",
-        fix: "http://cors.io/?",
         images: []
         
 
@@ -41,13 +40,13 @@ import Results from '../image-results/Results';
         name="searchText"
         value= {this.state.searchText}
         onChange={this.onTextChange}
-        floatingLabelText="Search from Images"
+        floatingLabelText="Search for Images"
         fullWidth={true}
         />
         <br/>
         <SelectField
           name="amount"
-          floatingLabelText="Amount"
+          floatingLabelText="Results amount"
           value={this.state.amount}
           onChange={this.onAmountChange}
         >

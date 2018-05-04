@@ -19,7 +19,8 @@ class Results extends Component {
     handleClose= img => {
         this.setState({ open: false});
     }
-  render() {
+    
+    render() {
       let imageListContent;
       const { images} = this.props;
       if (images){
